@@ -53,7 +53,7 @@ spec:
               protocol: TCP
           imagePullPolicy: IfNotPresent
           terminationMessagePolicy: File
-          image: image-registry.openshift-image-registry.svc:5000/liberty-service/ssa-liberty:44650ad 
+          image: image-registry.openshift-image-registry.svc:5000/liberty-service/ssa-liberty:4d30e21 
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
       dnsPolicy: ClusterFirst
