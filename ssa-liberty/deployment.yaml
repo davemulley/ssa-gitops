@@ -9,7 +9,7 @@ metadata:
     app.kubernetes.io/instance: ssa-liberty
     app.kubernetes.io/name: ssa-liberty
 spec:
-  replicas: 100
+  replicas: 1
   selector:
     matchLabels:
       app.kubernetes.io/instance: ssa-liberty
