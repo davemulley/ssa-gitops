@@ -1,0 +1,15 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: ssa-liberty
+  namespace: liberty-service
+  annotations:
+    argocd.argoproj.io/sync-options: Validate=false
+spec:
+  to:
+    kind: Service
+    name: ssa-liberty
+    weight: 100
+  tls:
+    termination: edge
+  wildcardPolicy: None
